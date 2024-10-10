@@ -15,3 +15,12 @@ sudo apt-get install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
+
+Access Jenkins: Jenkins runs on port 8080 by default. You can access it by navigating to http://your_server_ip_or_domain:8080 in your web browser.
+
+To unlock Jenkins for the first time, you'll need the initial admin password, which you can retrieve using:
+
+
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
